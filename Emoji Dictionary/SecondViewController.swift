@@ -13,43 +13,22 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var definitionLabel: UILabel!
     
     @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "NO EMOJI"
+    
+    @IBOutlet weak var yearCreatedLabel: UILabel!
+    
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    var emoji = Emoji()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        if emoji == "🙃" {
-            definitionLabel.text = "This is an upside-down smiley"
-        }
-        
-        if emoji == "💩" {
-            definitionLabel.text = "This is a poo emoji"
-        }
-        
-        if emoji == "👠" {
-            definitionLabel.text = "This is a shoe emoji"
-        }
-        
-        if emoji == "🐹" {
-            definitionLabel.text = "This is a hamster emoji"
-        }
-        
-        if emoji == "🐬" {
-            definitionLabel.text = "This is a dolphin emoji"
-        }
-        
-        if emoji == "😻" {
-            definitionLabel.text = "This is a cat-with-heart-eyes emoji"
-        }
-        
-        if emoji == "☂️" {
-            definitionLabel.text = "This is an umbrella emoji"
-        }
-        
+        emojiLabel.text = emoji.emojiType
+        yearCreatedLabel.text = "Origination Year: \(emoji.emojiOriginationYear)"
+        categoryLabel.text = "Category: \(emoji.emojiCategory)"
+        definitionLabel.text = emoji.emojiDefinition
     }
 
     override func didReceiveMemoryWarning() {

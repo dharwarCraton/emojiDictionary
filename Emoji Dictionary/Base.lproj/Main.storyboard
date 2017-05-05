@@ -68,23 +68,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83E-vP-MUP">
+                                <rect key="frame" x="122.5" y="444" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Created: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-oh-Avy">
+                                <rect key="frame" x="114" y="495" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uBy-oJ-EHh" firstAttribute="centerX" secondItem="q1p-5r-bYx" secondAttribute="centerX" id="2xK-ni-Hfz"/>
+                            <constraint firstItem="MZE-oh-Avy" firstAttribute="top" secondItem="83E-vP-MUP" secondAttribute="bottom" constant="30" id="Dss-kt-zoI"/>
+                            <constraint firstItem="83E-vP-MUP" firstAttribute="top" secondItem="uTB-m7-qS0" secondAttribute="bottom" constant="30" id="Vsb-Pt-rB4"/>
+                            <constraint firstItem="83E-vP-MUP" firstAttribute="centerX" secondItem="q1p-5r-bYx" secondAttribute="centerX" id="Y9G-88-oZp"/>
+                            <constraint firstItem="MZE-oh-Avy" firstAttribute="centerX" secondItem="q1p-5r-bYx" secondAttribute="centerX" id="cUD-Hc-Fol"/>
                             <constraint firstItem="uTB-m7-qS0" firstAttribute="top" secondItem="uBy-oJ-EHh" secondAttribute="bottom" constant="50" id="kim-xA-1eF"/>
                             <constraint firstItem="uBy-oJ-EHh" firstAttribute="top" secondItem="NCH-r8-55m" secondAttribute="bottom" constant="40" id="rqk-9Y-7AM"/>
                             <constraint firstItem="uTB-m7-qS0" firstAttribute="centerX" secondItem="q1p-5r-bYx" secondAttribute="centerX" id="zjU-El-EHl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="83E-vP-MUP" id="a9U-h6-Ya6"/>
                         <outlet property="definitionLabel" destination="uTB-m7-qS0" id="f5B-Kh-BtW"/>
                         <outlet property="emojiLabel" destination="uBy-oJ-EHh" id="J42-qg-j7F"/>
+                        <outlet property="yearCreatedLabel" destination="MZE-oh-Avy" id="05L-q2-fQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2l-ZR-fxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698.4000000000001" y="39.130434782608695"/>
+            <point key="canvasLocation" x="1921" y="38"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z6r-xG-rke">
